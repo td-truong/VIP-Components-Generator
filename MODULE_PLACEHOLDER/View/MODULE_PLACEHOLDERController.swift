@@ -8,14 +8,14 @@
 import UIKit
 
 protocol MODULE_PLACEHOLDERViewProtocol: AnyObject {
-    var interactor: MODULE_PLACEHOLDERInteractorProtocol! { get }
-    var router: MODULE_PLACEHOLDERRouterProtocol! { get }
+    var interactor: MODULE_PLACEHOLDERInteractorProtocol { get }
+    var router: MODULE_PLACEHOLDERRouterProtocol { get }
 }
 
 class MODULE_PLACEHOLDERController: UIViewController, MODULE_PLACEHOLDERViewProtocol {
     
-    let interactor: MODULE_PLACEHOLDERInteractorProtocol!
-    let router: MODULE_PLACEHOLDERRouterProtocol!
+    let interactor: MODULE_PLACEHOLDERInteractorProtocol
+    let router: MODULE_PLACEHOLDERRouterProtocol
     
     init(interactor: MODULE_PLACEHOLDERInteractorProtocol, router: MODULE_PLACEHOLDERRouterProtocol) {
         self.interactor = interactor
